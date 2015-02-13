@@ -9,6 +9,9 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <div>
+                <asp:Button ID="btnSendSmsBirthday" runat="server" Text="发送生日短信" OnClick="btnSendSmsBirthday_Click" />
+            </div>
             <asp:GridView ID="gvEmployee" runat="server" DataKeyNames="EmployeeID" PageSize="20"
                 AutoGenerateColumns="false">
                 <Columns>
