@@ -4,7 +4,7 @@ using System.Text;
 
 using Microsoft.Win32;
 
-namespace Smct.SmsApp.WinService
+namespace Smct.SmsApp.Entity
 {
     /// ERetCode,所有的API返回码定义
     public enum ERetCode

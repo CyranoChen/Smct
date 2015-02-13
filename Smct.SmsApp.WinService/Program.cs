@@ -39,9 +39,9 @@ namespace Smct.SmsApp.WinService
 
                     if (eRetCode.Equals(ERetCode.RETCODE_OK) || eRetCode.Equals(ERetCode.RETCODE_WAITEVENT))
                     {
-                        Console.WriteLine("打开端口成功 -- 等待10秒后发送");
+                        Console.WriteLine("打开端口成功 -- 等待5秒后发送");
 
-                        Thread.Sleep(10000);
+                        Thread.Sleep(5000);
                     }
                     else
                     {
@@ -68,9 +68,9 @@ namespace Smct.SmsApp.WinService
 
                             while (eRetCode.Equals(ERetCode.RETCODE_ERROR))
                             {
-                                Console.WriteLine("等待5秒后重试");
+                                Console.WriteLine("等待3秒后重试");
 
-                                Thread.Sleep(5000);
+                                Thread.Sleep(3000);
 
                                 eRetCode = SmsApiUtl.SendSms(string.Empty, em.Mobile, string.Format(wishWord, em.Name));
 

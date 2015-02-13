@@ -8,6 +8,8 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Microsoft.Win32;
 
+using Smct.SmsApp.Entity;
+
 namespace Smct.SmsApp.Console
 {
     public partial class FormSms : Form
