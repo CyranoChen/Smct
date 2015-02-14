@@ -117,7 +117,7 @@ namespace Smct.SmsApp.WinService
             }
             finally
             {
-                Console.Read();
+                //Console.Read();
             }
         }
 
